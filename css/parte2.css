@@ -182,7 +182,6 @@ div.nome{
         display: inline-block;
         width: 100%;
         padding: auto;
-        margin: auto;
         height: auto;
         box-sizing: border-box;
     }
@@ -227,7 +226,6 @@ div.nome{
         display: inline-block;
         width: 100%;
         padding: auto;
-        margin: auto;
         height: auto;
         box-sizing: border-box;
     }
@@ -274,7 +272,6 @@ div.nome{
         flex-direction: row;
         width: 100%;
         padding: auto;
-        margin: auto;
         height: auto;
         box-sizing: border-box;
     }
