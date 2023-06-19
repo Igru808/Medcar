@@ -162,7 +162,7 @@ img.sobre{
         font-size: 15px;
     }
     .conteudo_inicial{
-        margin: auto;
+/*         margin: auto; */
         display: block;
         box-sizing: border-box;
     }
@@ -244,6 +244,25 @@ img.sobre{
     }
 }
 @media (min-width:900px){
+    .fotopag1{
+        width: 100%;
+        height: auto;
+
+    }
+    .medcar-principal{
+       
+        margin: 150px 120px;
+    }
+    .medcar-principal a{
+
+        padding: 50px 30px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px;
+    }
     .conteudo_inicial{
         width: 100%;
         height: auto;
