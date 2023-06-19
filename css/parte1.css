@@ -31,7 +31,7 @@ body{
 }
 .medcar-principal a {
     display: block;
-    padding: 50px 60px;
+    padding: 60px 50px;
     text-decoration: none;
     color: white;
 
@@ -253,10 +253,7 @@ img.sobre{
        
         margin: 150px 120px;
     }
-    .medcar-principal a{
 
-        padding: 50px 30px;
-    }
     h1{
         font-size: 45px;
     }
