@@ -140,7 +140,7 @@
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 0;
-    padding: 110px;
+    padding: 100px;
   }
   
   @keyframes fadein{
@@ -309,7 +309,7 @@
         margin: 20px;
     }
     .frase_final{
-        margin-top: 50px;
+/*         margin-top: 50px; */
         font-size: 100%;
     }
     .descricao h3, .descricao_2 h3, .descricao_3 h3{
