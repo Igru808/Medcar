@@ -138,8 +138,9 @@
     color: white;
     text-align: center;
     font-size: 28px;
-    margin-top: 220px;
+    margin-top: 20px;
     margin-bottom: 0;
+    padding: 110px;
   }
   
   @keyframes fadein{
