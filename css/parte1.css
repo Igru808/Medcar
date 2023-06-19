@@ -26,12 +26,12 @@ body{
     text-align: center;
     border-radius: 10px;
     right: 0;
-    margin: 120px;
+    margin: 150px 120px;
 
 }
 .medcar-principal a {
     display: block;
-    padding: 70px;
+    padding: 50px 60px;
     text-decoration: none;
     color: white;
 
@@ -66,12 +66,14 @@ h3{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .ladoesquerdo{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    padding: 10px 0 0 0 ;
 }
  
 
@@ -139,6 +141,26 @@ img.sobre{
 }
 
 @media (max-width: 699px) {
+    .fotopag1{
+        width: 100%;
+        height: 350px;
+
+    }
+    .medcar-principal{
+        width: 40%;
+        padding: auto;
+        margin: 60px 30px;
+    }
+    .medcar-principal a{
+
+        padding: 40px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+    }
     .conteudo_inicial{
         margin: auto;
         display: block;
@@ -148,21 +170,20 @@ img.sobre{
         width: 100%;
         height: auto;
         box-sizing: border-box;
-        padding: auto;
-        margin: auto;
+       
     }
     div.texto1{
-        padding: auto;
+/*         padding: auto; */
         box-sizing: border-box;
         height: auto;
-        margin: auto;
+/*         margin: auto; */
         line-height: 22px;
     }
     div.texto2{
-        padding: auto;
+/*         padding: auto; */
         box-sizing: border-box;
         height: auto;
-        margin: auto;
+/*         margin: auto; */
         line-height: 22px;
     }
     div.img_galeria{
@@ -176,6 +197,26 @@ img.sobre{
 
 }
 @media (min-width: 700px) and (max-width:899px) {
+     .fotopag1{
+        width: 100%;
+        height: 450px;
+
+    }
+    .medcar-principal{
+        width: 45%;
+        padding: auto;
+        margin: 80px 30px;
+    }
+    .medcar-principal a{
+
+        padding: 45px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px;
+    }
     .conteudo_inicial{
         margin: auto;
         display: block;
