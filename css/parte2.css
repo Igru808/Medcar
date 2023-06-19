@@ -198,7 +198,7 @@ div.nome{
     .icones{
         display: flex;
         flex-direction: row;
-        margin: auto;
+/*         margin: auto; */
         padding: auto;
         width: 100%;
         box-sizing: border-box;
@@ -233,9 +233,9 @@ div.nome{
     div.coment{
         display: block;
         box-sizing: border-box;
-        margin: 20px 0;
+        margin: 20px 90px;
         padding: auto;
-        width: 100%;
+        width: 80%;
 
     }
 }
