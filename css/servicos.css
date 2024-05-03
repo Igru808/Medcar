@@ -1,54 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
 :root{
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fontt-heebo: 'Heebo', sans-serif;
     --font-titulo: 'Roboto', sans-serif;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
+    --cor2: #A9A9A9;
+    --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
 }
 
-.servicos_medcar{
+/* body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--font-padrao);
+  background-color: #1F2024;
+} */
+
+  main, footer, body{
+  background-color: #1F2024;
+  }
+
+  .servicos_medcar{
     animation: fadein 1s;
     height: auto;
-    background-color: #2C2C2C;
-    font-family: Helvetica, sans-serif;
-    }
-  
-  .titulo{
-    display: inline-block;
-    text-align: center;
-    color:rgb(214, 0, 0);
-    font-size: 400%;
-    margin: auto;
-    width: 100%;
-    padding: 20px;
-    animation: fadein 1s;
-    font-family: Helvetica, sans-serif;
-    font-weight: 900;
-  }
-  
-  .servicos{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 20px;
-  }
-  
-  .servicos_2{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 30px 20px;
+
+    font-family: var(--font-titulo);
   }
   
   .img_item{
     width: 10%;
+    height: 10%;
     transition: 0.5s;
-    position: relative;
   }
   
   .img_box{
@@ -68,54 +59,27 @@
   
   .descricao{
     position: absolute;
-    font-size: 100%;
+    font-size: 90%;
     background-color: gray;
     color: black;
     border: 3px solid white;
-    padding: 0% 3%;
     display: none;
     height: auto;
     z-index: 5;
     width: 400px;
-    text-align: center;
+    text-align: justify;
     font-family: Helvetica, sans-serif;
     animation: fadein 0.5s;
   }
-  
-  .descricao_2{
-    position: absolute;
-    font-size: 100%;
-    background-color: gray;
-    color: black;
-    border: 3px solid white;
-    padding: 0% 2%;
-    display: none;
-    height: auto;
-    z-index: 5;
-    width: 400px;
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-    animation: fadein 0.5s;
+
+  .inverter{
+    right: 1%;
   }
   
-  .descricao_3{
-    position: absolute;
-    font-size: 100%;
-    background-color: gray;
-    color: black;
-    border: 3px solid white;
-    padding: 0% 3%;
-    display: none;
-    height: auto;
-    z-index: 5;
-    width: 400px;
+  .descricao h3{
     text-align: center;
-    font-family: Helvetica, sans-serif;
-    animation: fadein 0.5s;
-  }
-  
-  .descricao h3, .descricao_2 h3, .descricao_3 h3{
     font-weight: 900;
+    font-size: 120%;
   }
   
   .lista{
@@ -142,6 +106,10 @@
     margin-bottom: 0;
     padding: 100px;
   }
+
+  .img_item:hover .descricao{
+    display: block;
+  }
   
   @keyframes fadein{
     0%{
@@ -161,188 +129,49 @@
     }
   }
 
-  @media (min-width: 1000px) {
-    .servicos{
-      margin-top: 50px;
-    }
-    .legenda{
-      padding-top: 5px;
-      font-size: 150%;
-    }
-    .direita_maior{
-        right: 1%;
-    }
-    .img_item:hover .descricao{
-        display: block;
-    }
-    .img_item:hover .descricao_2{
-        display: block;
-    }
-    .img_item:hover .descricao_3{
-        display: block;
-    }
-    .tela_menor{
-      display: none;
-    }
-    .tela_maior{
-      display: inline;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .servicos{
-      margin-top: 50px;
-    }
-    .legenda{
-      padding-top: 5px;
-      font-size: 150%;
-    }
-    .direita_maior{
-        right: 1%;
-    }
-    .img_item:hover .descricao{
-        display: block;
-    }
-    .img_item:hover .descricao_2{
-        display: block;
-    }
-    .img_item:hover .descricao_3{
-        display: block;
-    }
-    .tela_menor{
-      display: inline;
-    }
-    .tela_maior{
-      display: none;
-    }
-  }
-  
-  @media (max-width:899px) {
+  @media (max-width:992px) {
     .titulo{
         font-size: 300%;
     }
+
     .img_box{
-        width: 50%;
+        width: 20%;
         align-items: center;
     }
+
     .img_item{
         display: inline-block;
         text-align: center;
         width: 25%;
         margin: 10px;
     }
+
     .legenda{
         font-size: 150%;
     }
-    .servicos_2{
-        margin-top: 0;
-        justify-content: space-evenly;
-    }
+
     .frase_final{
         margin-top: 50px;
         font-size: 100%;
     }
-    .descricao h3, .descricao_2 h3, .descricao_3 h3{
+
+    .descricao h3{
         font-weight: 900;
-        font-size: 90%;
-      }
-    .lista{
-        padding-left: 10%;
-        text-align: left;
-        font-weight: 800;
-        font-size: 70%;
-    }
-    .texto_descricao{
-        font-size: 70%;
-    }
-    .descricao{
-        font-size: 110%;
-        width: 400px;
-    }
-    .descricao_2{
-        font-size: 110%;
-        width: 400px;
-    }
-    .descricao_3{
-        font-size: 110%;
-        width: 400px;
-    }
-    .tela_menor{
-      display: none;
-    }
-    .tela_maior{
-      display: inline;
-    }
-    .direita_medio{
-        right: 10%;
-    }
-
-    .esquerda_medio{
-      left: 1%;
-    }
-
-    .img_item:hover{
-        transform: none
-    }
-  }
-  
-  @media (max-width: 699px) {
-    .titulo{
-        font-size: 200%;
-    }
-    .img_box{
-        width: 100%;
-    }
-    .legenda{
         font-size: 120%;
-    }
-    .servicos{
-        flex-wrap: wrap;
-        flex-direction:row;
-        margin-top: 10px;
-    }
-    .servicos_2{
-        margin-top: 0;
-    }
-    .img_item{
-        width: 30%;
-        margin: 20px;
-    }
-    .frase_final{
-/*         margin-top: 50px; */
-        font-size: 100%;
-    }
-    .descricao h3, .descricao_2 h3, .descricao_3 h3{
-        font-weight: 900;
-        font-size: 110%;
       }
+
     .lista{
         padding-left: 10%;
         text-align: left;
         font-weight: 800;
-        font-size: 100%;
+        font-size: 70%;
     }
+
     .descricao{
-        font-size: 90%;
-        width: 200px;
+        font-size: 110%;
+        width: 400px;
     }
-    .descricao_2{
-        font-size: 90%;
-        width: 200px;
-    }
-    .descricao_3{
-        font-size: 90%;
-        width: 200px;
-    }
-    .tela_menor{
-      display: inline;
-    }
-    .tela_maior{
-      display: none;
-    }
-    .direita_menor{
-        right: 1%;
-    }
+
     .img_item:hover{
         transform: none
     }

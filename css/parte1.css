@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
 :root{
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fontt-heebo: 'Heebo', sans-serif;
     --font-titulo: 'Roboto', sans-serif;
-    --cor1: #C92828;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
     --cor2: #A9A9A9;
     --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
 }
 
 *{
@@ -18,198 +26,124 @@
 body{
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: var(--font-padrao);
+    background-color: var(--cor4);
+}
+.parteinicial{
+    width: 100%;
+    height: 800%;
+    background-color: var(--cor4);
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
 }
 
 .medcar-principal {
-    position: absolute;
-    background-color: rgba(1, 1, 1, 0.37);
-    text-align: center;
-    border-radius: 10px;
-    right: 0;
-    margin: 150px 120px;
-
+    color:var(--cor5); 
 }
-.medcar-principal a {
-    display: block;
-    text-decoration: none;
-    color: white;
-
+.tituloprinc{
+    font-family: 'Aero';
+    font-size: 750%;
 }
-
-.medcar-principal a:hover {
-    background-color: rgba(2, 2, 2, 0.76);
-    box-shadow: solid rgba(255, 0, 0, 0.562) 5px 5px 5px ;
-    border-radius: 10px;
-    color: #C92828;
-
+.titulosec{
+    font-size: 250%;
+    font-family: 'Aero'; 
+    text-align: left;
 }
-h1{
-
-    font-family: var(--font-titulo);
-    font-size: 60px;
-}
-h3{
-    font-size: 25px;
-    font-family: var(--font-titulo);
-}
-.fotopag1 {
-    width: 100%;
-    margin: 0;
-    height: 700px;
-}
-
-.conteudo_inicial{
+#fotoprinc{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.377);
     width: 100%;
     height: auto;
-    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-self: center;   
+}
+
+.row{
+    margin: 5% 0%;
+}
+#imagemprincipal{
+    display: flex;
+    width: 50%;
+     
+}
+.secundariotexto{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 100%
 }
-.ladoesquerdo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px 0 0 0 ;
+.btn-danger{
+    background-color: #BF3030; 
+    height: 50px;
+    width: 40%;
 }
- 
+.btn-danger:hover{
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    background-color: var(--cor4);
+}
+.links-pag2 p{
+    font-weight: bolder;
+}
+.sublink a{
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 500;    
+}
+.lk{
+    font-size: 95%;
+}
+
+/* Começa a parte de quem somos */
+
+
 
 .sub1{
     font-family: var(--font-titulo);
-    color: var(--cor1);
-    padding: 0 0 10px 0;
-    font-size: 20px;
+    color: #BF3030;
+    font-size: 150%;
+    padding: 5% 0;
+    text-shadow: 1px 1px 10px#363636
 }
-.sub2{
-    font-family: var(--font-titulo);
-    color: var(--cor1);
-    padding: 10px 0;
-    font-size: 20px;
-}
-.text{
-    font-family: var(--font-padrao) ;
-    font-size: 14px;
-}
+
 div.texto1 {
     width: 90%; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding:0 5px 5px 40px;
+
     text-align: justify;
-    height: 300px;
+    height: 150%;
     line-height:20px;
     font-size: 15px;
+    color: white;
     font-family:var(--fontt-heebo);
 }
-div.texto2{
-    width: 90%; 
-    box-sizing: border-box;
-    padding:0 5px 5px 40px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: justify;
-    line-height:20px;
-    font-size: 15px;
-    font-family:var(--fontt-heebo);
-}
-div.img_galeria{
+
+.img_galeria{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 60%;   
 }
-.img_galeria img{
-    width: 175px;
-    height: 200px;
-    margin: 15px 26px; 
-}
-img.sobre{
-    display: flex;
-    flex-direction: row;
-    padding: auto;
+img.ft{
+    max-width: 33%;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.349);
     box-sizing: border-box;
+    padding: 1%;
 }
 
-@media (max-width: 699px) {
-    .fotopag1{
-        width: 100%;
-        height: 350px;
-
-    }
-    .medcar-principal{
-        width: 40%;
-        padding: auto;
-        margin: 60px 30px;
-    }
-    .medcar-principal a{
-
-        padding: 40px;
-    }
-    h1{
-        font-size: 20px;
-    }
-    h3{
-        font-size: 10px;
-    }
-    .conteudo_inicial{
-/*         margin: auto; */
-        display: block;
-        box-sizing: border-box;
-    }
-    .ladoesquerdo{
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-       
-    }
-    div.texto1{
-/*         padding: auto; */
-        box-sizing: border-box;
-        height: auto;
-/*         margin: auto; */
-        line-height: 22px;
-    }
-    div.texto2{
-/*         padding: auto; */
-        box-sizing: border-box;
-        height: auto;
-/*         margin: auto; */
-        line-height: 22px;
-    }
-    div.img_galeria{
-        box-sizing: border-box;
-        margin: auto;
-        padding:auto;
-        width: auto;
-        height: auto;
-        columns: 2;
-    }
-
-}
-@media (min-width: 700px) and (max-width:899px) {
+@media (max-width:992px) {
      .fotopag1{
         width: 100%;
         height: 450px;
 
     }
-    .medcar-principal{
-        width: 45%;
-        padding: auto;
-        margin: 80px 30px;
-    }
-    .medcar-principal a{
 
-        padding: 45px;
-    }
     h1{
         font-size: 45px;
     }
@@ -242,19 +176,9 @@ img.sobre{
         width: 15%
     }
 }
-@media (min-width:900px){
-    .fotopag1{
-        width: 100%;
-        height: auto;
 
-    }
-    .medcar-principal{
-       
-        margin: 150px 120px;
-    }
-    .medcar-principal a {
-         padding: 60px;
-    }
+
+/* @media (min-width:900px){
     
     h1{
         font-size: 45px;
@@ -282,22 +206,10 @@ img.sobre{
         height: auto;
         margin: auto;
         line-height: 22px;
-    }
-    div.texto2{
-        padding: auto;
-        box-sizing: border-box;
-        height: auto;
-        margin: auto;
-        line-height: 22px;
-
-    }
-    div.img_galeria{
+    } */
+      /* div.img_galeria{
         display: flex;
         justify-content: space-around;
-        padding: auto;
-    }
-    img.sobre{
-        width: 32%
-    }
-
-}
+    } */
+/* 
+}  */

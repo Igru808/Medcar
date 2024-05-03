@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
 :root{
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fontt-heebo: 'Heebo', sans-serif;
     --font-titulo: 'Roboto', sans-serif;
-    --cor1: #C92828;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
     --cor2: #A9A9A9;
     --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
 }
 
 * {
@@ -15,51 +23,51 @@
     padding: 0; 
     box-sizing: border-box;
 }
-
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--font-padrao);
+    background-color: #1F2024;
+  }
 .footer-rodape-certo{
-    height: 396px;
+    height: 340px;
     width: 100%;
-    background-color: black;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 2%;
 }
-
 .footer-rodape{
+    margin: 0 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
 }
-
 .icon-rodape{
-    width: 50px;
-    padding: 10px;
-    transition: 0.25s;
-    transform: translate(0, 0);
+    width: 30px;
+    padding: 5px; 
 }
-
 .icon-rodape:hover{
-    transition: 0.25s;
-    transform: translate(4px, 0);
-    
+    background-color: var(--cor1);
+    border-radius: 10px;
 }
-
 .redes-rodape{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .rodape_logo{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-
 .rodape_logo1{
-    width: 250px;
+    width:160px;
     padding: 20px;
     padding-bottom: 40px;
 }
-
+.texto-rodape{
+    font-size: 14px;
+    color: #f5f4f4;
+}
 .item-rodape{
     display: flex;
     flex-direction: column;
@@ -67,11 +75,10 @@
     width: 30%;
     height: auto;
     justify-content: center;
-    padding: 50px 0 0 0;
 }
 
 .itemN-rodape{
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,17 +86,12 @@
     width: 70%; 
 }
 
-footer h3{
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
+
 
 .parteN-rodape{
     width: 50%;
     display: flex;
     justify-content: center;
-   /* background-color: aquamarine;*/
     height: 200px;
 }
 
@@ -97,52 +99,38 @@ footer h3{
     width: 50%;
     display: flex;
     justify-content: center;
-    /*background-color: blue;*/
     height: 200px;
 }
 
 .e50-rodape,.lib1-rodape,#e30-rodape{
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    line-height: 25px;
-    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
 }
-
+#e30-rodape:hover{
+    color: var(--cor1);
+}
 .link-rodape{
     text-decoration: none;
 }
 
 .link-rodape:hover{
     text-decoration: none;
-
-
 }
 
 .lib1-rodape{
-    line-height: 24px;
-    transform: translate(0,0);
-    transition: 0.25s;
+    line-height: 12px;
+    font-size: 13px;
     margin: 0 0 10px;
 }
 
 .lib1-rodape:hover{
-    line-height: 35px;
-    transform: translate(4px,0);
-    transition: 0.25s;
-    color: #C92828;
+    color: var(--cor1);
+    text-shadow: #1F2024;
 }
 
-#e30-rodape{
-    transform: translate(0,0);
-    transition: 0.25s;
-}
-
-#e30-rodape:hover{
-    transform: translate(4px,0);
-    transition: 0.25s;
-    color: #C92828;
-}
 
 @media (min-width: 899px){
     .ic3-rodape{
@@ -152,7 +140,7 @@ footer h3{
 
 @media (max-width: 899px){
     .item-rodape{
-        padding-top: 60px;
+        /* padding-top: 60px; */
         display: flex;
         flex-direction: column;
         align-items: center;

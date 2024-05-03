@@ -9,13 +9,13 @@
     <title>Centro Automotivo Medcar</title>
 
     <link rel="shortcut icon" href="imagens/img-servicos/favicon-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/parte1.css">
     <link rel="stylesheet" href="css/parte2.css">
     <link rel="stylesheet" href="css/icones.css">
     <link rel="stylesheet" href="css/rodape1.css">
-
 
 </head>
 
@@ -48,275 +48,288 @@
         </div>
     </header>
 
-    <main>
-        <div class="fotopag1">
-            <div class="medcar-principal">
-                <a href="servicos.html">
-                    <h1>MEDCAR</h1>
-                    <h3>O MÉDICO DO SEU CARRO</h3>
-                </a>
+    <main class="mx-auto">
+        <div class="row container mx-auto mb-5">
+
+            <div class="medcar-principal col-lg-6">
+                <h1 class="tituloprinc text-center">MEDCAR</h1>
+                <p class="titulosec text-center">O MÉDICO DO SEU CARRO</p>
+                <div class="secundariotexto row">
+                    <button class="btn btn-danger col-5 col-lg-5 mx-2">
+                        <a class="lk text-decoration-none text-white d-block fw-bold" href="servicos.html#servicos">Conheça nossos serviços</a>
+                    </button>
+                    <button class="btn btn-danger col-5 col-lg-5 mx-2">
+                        <a class="lk text-decoration-none text-white d-block fw-bold" href="https://api.whatsapp.com/send?phone=5519994647675">Solicite um orçamento</a>
+                    </button>
+                </div>
             </div>
-            <img class="fotopag1" src="imagens/img-servicos/ferramentas(car).png" alt="">
+
+            <div id="imagemprincipal" class="col-lg-6 d-lg-block d-none">
+                <img id="fotoprinc" src="imagens/carro.jpg" alt="">
+            </div>
+
         </div>
 
-        <section class="conteudo_inicial"><a id="sobre"></a>
+        <section class="row container mx-auto"><a id="sobre"></a>
 
-            <div class="ladoesquerdo">
+            <div class="d-flex col-lg-6 flex-column justify-content-center">
                 <div class="texto1">
 
                     <h3 class="sub1">QUEM SOMOS?</h3>
 
-                    <p class="prg1"> Somos um centro automotivo especializado em mecânica em geral, revisão preventiva, injeção eletrônica, suspensão, alinhamento, balanceamento, pneus, troca de óleo e baterias. Aos doze anos, o Alessandro proprietário da Medcar, teve seu primeiro contato com manutenção de carros. Aos 20 anos fundou com seu irmão a oficina mecânica Auto Elétrica e Mecânica Joia, na qual trabalhou por mais de 20 anos. <br> Em 2020, decidiu seguir carreira solo e expandir seus serviços, fundando em 13 de setembro de 2020 o Centro Automotivo Medcar, que oferece todo o atendimento corretivo e preventivo para os sistemas mecânicos do carro. São 38 anos de experiência no mercado. <br> Localizada na Rua Janda, n°135, Vila Santana em Vargem Grande do Sul. Contamos com uma equipe profissional e especializada na área com o objetivo solucionar os problemas dos nossos clientes de forma eficaz, garantindo serviço de qualidade e a segurança dos nossos clientes. Para nós, a sua segurança e a do seu carro estão em primeiro lugar!
+                    <p class="prg1"> Somos um centro automotivo especializado em mecânica em geral, revisão preventiva,
+                        injeção eletrônica, suspensão, alinhamento, balanceamento, pneus, troca de óleo, baterias e
+                        sistema de câmbio automático.
+                        Oferecemos todo o atendimento corretivo e preventivo para os sistemas mecânicos do seu carro.
+                        <br>
+                        O Centro Automotivo Medcar está localizado na Rua Joaquim Antonio da Silva, n° 431, Jardim São José em Vargem Grande do
+                        Sul. Contamos com uma equipe profissional e especializada na área com o objetivo solucionar os
+                        problemas dos nossos clientes de forma eficaz, garantindo serviço de qualidade e a segurança dos
+                        nossos clientes. <br>
+                        Para nós, a sua segurança e a do seu carro estão em primeiro lugar!
                     </p>
-                </div>
-
-                <div class="texto2">
-
-                    <h3 class="sub2">PORQUE ESCOLHER UM CENTRO AUTOMOTIVO?</h3>
-
-                    <p class="prg2">A oficina mecânica oferece apenas serviços mecânicos, como manutenção, reparação ou modificação em máquinas, já um centro automotivo está melhor preparado para atender todos os
-                    tipos de demandas. Possui ferramentas e equipamentos modernos e conta com infraestrutura mais
-                    completa e quadro de mecânicos profissionais mais amplo, garantindo mais rapidez e segurança.
-                    </p>
-
                 </div>
             </div>
 
-            <div class="img_galeria">
-
-                <img class="sobre" src="imagens/img-index/balanceamento-index.jpg" alt="Foto do centro automotivo MEDCAR">
-                <img class="sobre" src="imagens/img-index/aparelho2.jpg" alt="">
-                <img class="sobre" src="imagens/img-index/parteinterna.jpg" alt="">
-                <img class="sobre" src="imagens/img-index/aparelho.jpg" alt="">
-
+            <div class="d-flex col-lg-6 flex-row justify-content-center">
+                <div class="row justify-content-center">
+                    <img class="col-md-4 ft" src="imagens/img-index/balanceamento-index.jpg"
+                        alt="Foto do centro automotivo MEDCAR">
+                    <img class="col-md-4 ft" src="imagens/img-index/aparelho2.jpg" alt="">
+                    <img class="col-md-4 ft" src="imagens/img-index/aparelho.jpg" alt="">
+                </div>
             </div>
         </section>
 
         <div class="fundo">
             <div class="container4">
-                <h2>NÃO DEIXE PARA ÚLTIMA HORA, A manutenção preventiva é o caminho mais seguro de evitar maiores
-                    contratempos!
-                </h2>
-                <h2>CONHEÇA NOSSOS SERVIÇOS:</h2>
-                <div class="linha1">
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/freios.png" alt="">
-                            <p>Freios</p></a>
-                    </div>
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/injecaoeletronica.png" alt="">
-                            <p>Injeção Eletrônica</p></a>
-                    </div>
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/suspecao.png" alt="">
-                            <p>Suspensão</p></a>
-                    </div>
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/revisao preventiva.png" alt="">
-                            <p>Revisão Preventiva</p></a>
-                    </div>
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/bateria.png" alt="">
-                            <p>Baterias</p></a>
-                    </div>
-                    <div class="icone">
-                        <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/radiador.png" alt="">
-                            <p>Radiador</p></a>
-                    </div>
-                </div>
 
-                <div class="linha2">
+                <p class="tit_servico">CONHEÇA NOSSOS SERVIÇOS:</h2>
+                <div class="row">
 
-                    <div class="alinhamento">
-                        <div class="icone">
-                            <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/manutencao.png" alt="">
-                                <p>Manutenção</p></a>
-                        </div>
-                        <div class="icone">
-                            <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/pneus.png" alt="">
-                                <p>Pneus</p></a>
-                        </div>
-                        <div class="icone">
-                            <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/alinhamento.png" alt="">
-                                <p>Alinhamento</p></a>
-                        </div>
-                        <div class="icone">
-                            <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/balanceamento.png" alt="">
-                                <p>Balanceamento</p></a>
-                        </div>
-                        <div class="icone">
-                            <a href="servicos.html#servicos" class="link-icones"><img src="imagens/img-apresentar/oleo.png" alt="">
-                                <p>Oléo</p></a>
-                        </div>
+                    <div class="icone col-lg-2 mb-4">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/alinhamento.jpeg" alt="Imagem de Alinhamento"
+                                class="img_box">
+                            <p>Alinhamento</p>
+                        </a>
                     </div>
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/balanceamento.jpg" alt="Imagem de Balanceamento"
+                                class="img_box">
+                            <p>Balanceamento</p>
+                        </a>
+                    </div>
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/bateria.jpg" alt="Imagem de Bateria" class="img_box">
+                            <p>Baterias</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/cambio.jpg" alt="Imagem de Balanceamento" class="img_box">
+                            <p>Câmbio Automático</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/freios.jpg" alt="Imagem de Freios" class="img_box">
+                            <p>Freios</p>
+                        </a>
+                    </div>
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/injecao.jpg" alt="Imagem de Injeção Eletrônica"
+                                class="img_box">
+                            <p>Injeção Eletrônica</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/embreagem.jpg" alt="Imagem de Embreagem" class="img_box">
+                            <p>Embreagem</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/radiador.jpg" alt="Imagem de Radiador" class="img_box">
+                            <p>Radiador</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/revisao.jpg" alt="Imagem da Revisão Preventiva"
+                                class="img_box">
+                            <p>Revisão Preventiva</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/suspensao.jpg" alt="Imagem de Suspensão" class="img_box">
+                            <p>Suspensão</p>
+                        </a>
+                    </div>
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/troca de pneu.jpg" alt="Troca de pneus" class="img_box">
+                            <p>Troca de Pneus</p>
+                        </a>
+                    </div>
+
+
+                    <div class="icone col-lg-2">
+                        <a href="servicos.html#servicos" class="link-icones">
+                            <img src="imagens/img-servicos/troca de óleo.jpg" alt="Imagem de Troca de Óleo"
+                                class="img_box">
+                            <p>Troca de Oléo</p>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
+
 
         <section class="parte_dois">
 
-            <p class="sub3"> POR QUE OFERECEMOS A MELHOR SOLUÇÃO PARA O SEU VEÍCULO?</p>
+            <p class="pttext">
+                Não deixe para a última hora, a manutenção preventiva é o caminho mais seguro de evitar maiores
+                contratempos!
+            </p>
 
-            <div class="icones">
-                <div class="primeiro_icone">
-                    <div class="starfoto">
-                        <img class="star" src="imagens/img-index/Star.png" alt="">
-                    </div>
-                    <p class="titulo"> PROFISSIONAIS QUALIFICADOS</p>
-                    <p class="text">Contamos com uma equipe de profissionais qualificados na área. São mais de 38 anos de experiência no mercado de trabalho!</p>
+            <div class="row">
+                <div class="txtorcamento col-lg-6 mb-3">
+                    <p class="pt2text">Solicite seu orçamento!</p>
+                    <p class="pttexto">Contamos com uma equipe de profissionais qualificados na área. São mais de 38
+                        anos de experiência no mercado de trabalho! Nossos produtos e equipamentos são de marcas que
+                        garantem a
+                        nossa qualidade.
+                    </p>
+                    <p class="pttexto">Parcelamos no cartão até em 10 vezes sem juros.</p>
+                    <button class="btn btn-danger">
+                        <a class="text-decoration-none text-white d-block fw-bold" href="https://api.whatsapp.com/send?phone=5519994647675">Solicite um orçamento</a>
+                    </button>
                 </div>
-
-
-                <div class="segundo_icone">
-                    <div class="qualityfoto">
-                        <img class="quality" src="imagens/img-index/🦆 icon _data quality_.png" alt="">
-                    </div>
-
-                    <p class="titulo">SERVIÇO DE QUALIDADE</p>
-                    <p class="text">Nossos produtos e equipamentos são de marcas que garantem a nossa qualidade. Há anos oferecemos o melhor serviço.</p>
-                </div>
-
-                <div class="terceiro_icone">
-                    <div class="cifraofoto">
-                        <img class="cifrao" src="imagens/img-index/Vector.png" alt="">
-                    </div>
-                    <p class="titulo">PREÇO ACESSÍVEL</p>
-                    <p class="text">Nossos serviços tem um preço que cabe no seu bolso. Parcelamos no cartão até em 10 vezes sem juros. </p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="comentarios">
     
+                <div class="comentarios col-lg-6"> 
 
-            <div class="coment">
-                <div class="coment-header">
-                    <div class="nome">
-                        <img class="cli" src="imagens/img-index/Lucas.png" alt="Foto">
-                        <h4>Lucas Rhaiter</h4>
+                    <div class="coment">
+                        <div class="partecima">
+                            <p class="t1">Lucas Rhaiter</p>
+                            <p class="star"> &#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        </div>
+
+                        <p class="t2">"Excelente profissionais, ótimo atendimento e estão sempre prontos pra
+                            atender os clientes na hora que precisamos. O que mais acho legal (honestidade).
+                            Parabéns galera!"</p>
                     </div>
-                    <div class="aval">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
+
+
+                    <div class="coment">
+                        <div class="partecima">
+                            <p class="t1">Rick D. Camões</p>
+                            <p class="star"> &#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        </div>
+
+                        <p class="t2">"Profissionais qualificados, equipamentos de última geração, e o mais importante
+                            pessoal de extrema confiança! Tudo muito limpo e organizado, além de um Atendimento nota
+                            1000!"</p>
                     </div>
+                    <div class="coment">
+                        <div class="partecima">
+                            <p class="t1">Antônio Nascimento</p>
+                            <p class="star"> &#9733 &#9733 &#9733 &#9733 &#9733</p>
+                        </div>
+
+                        <p class="t2">"Lugar onde se encontra honestidade, serviços pontuais e tem tudo, atendimento
+                            camarada e onde os valores são justos."</p>
+                    </div>
+
                 </div>
-                <p class="comet-text">Excelente profissionais, ótimo atendimento e estão sempre prontos pra atender
-                os clientes na hora que precisamos. O que mais acho legal (honestidade). Parabéns galera!</p>
-            </div>
-
-            <div class="coment">
-                <div class="coment-header">
-                    <div class="nome">
-                        <img class="cli" src="imagens/img-index/Rick.png" alt="Foto">
-                        <h4>Rick D. Camões</h4>
-                    </div>
-
-                    <div class="aval">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                    </div>
-
-                </div>
-                <p class="comet-text">Profissionais qualificados, equipamentos de última geração, e o mais
-                importante pessoal de extrema confiança! Tudo muito limpo e organizado, além de um Atendimento nota1000!</p>
-            </div>
-
-            <div class="coment">
-
-                <div class="coment-header">
-                    <div class="nome">
-                        <img class="cli" src="imagens/img-index/Antonio.png" alt="Foto">
-                        <h4>Antônio Nascimento</h4>
-                    </div>
-                    <div class="aval">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                        <img src="imagens/img-index/Star_yelow.png" alt="Estrela">
-                    </div>
-                </div>
-                <p class="comet-text">Lugar onde se encontra honestidade, serviços pontuais e tem tudo, atendimento camarada e onde os valores são justos.</p>
-            </div>
-            </div>
             </div>
         </section>
-    </main>
-
-    <footer class="footer-rodape-certo" id="rodape">
-
-        <div class="footer-rodape">
-            <div class="item-rodape">
-                <div class="rodape_logo">
-                    <img class="rodape_logo1" src="imagens/img_rodape/logo.png" alt="Logo Medcar">
-                </div>
-                <div class="redes-rodape">
-                    <a class="ic3-rodape" href="#servicos">
-                    <img class="icon-rodape ic1-rodape" src="imagens/img_rodape/services-64.png" alt="Nossos Serviços">
-                    </a>
-                    <a href="https://www.instagram.com/medcar_centroautomotivo/">
-                    <img class="icon-rodape" src="imagens/img_rodape/instagram.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/Medcarcentroautomotivovgs/">
-                    <img class="icon-rodape" src="imagens/img_rodape/facebook.png" alt="Facebook">
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=5519994647675">
-                    <img class="icon-rodape" src="imagens/img_rodape/whatsapp.png" alt="whatsapp">
-                    </a>
-                    <a href="mailto:medcarcentroautomotivo20@gmail.com">
-                    <img class="icon-rodape" src="imagens/img_rodape/email.png" alt="Email">
-                    </a>
-                    <a href="tel:+551936431609">
-                    <img class="icon-rodape" src="imagens/img_rodape/telefone.png" alt="Telefone">
-                    </a>
-                    <a class="ic3-rodape" href="https://goo.gl/maps/6PRvzD4VX5Ebhh8c6">
-                    <img class="icon-rodape ic3-rodape" src="imagens/img_rodape/location-64.png" alt="Localização">
-                    </a>
-                </div>
-            </div>
-            <div class="itemN-rodape">
-        
-                <div class="parteN-rodape">
-                    <div class="texto6-rodape">
-                        <h3 class="texto-rodape">NOSSOS SERVIÇOS</h3>
-                        <br>
-                        <a href="servicos.html#servicos" class="link-rodape">
-                            <p class="lib1-rodape">Alinhamento</p>
-                            <p class="lib1-rodape">Balanceamento</p>
-                            <p class="lib1-rodape">Bateria</p>
-                            <p class="lib1-rodape">Injeção eletrônica</p>
+        <footer class="footer-rodape-certo" id="rodape">
+            <div class="footer-rodape">
+                <div class="item-rodape">
+                    <div class="rodape_logo">
+                        <img class="rodape_logo1" src="imagens/img_rodape/logo.png" alt="Logo Medcar">
+                    </div>
+                    <div class="redes-rodape">
+                        <a class="ic3-rodape" href="#servicos">
+                            <img class="icon-rodape ic1-rodape" src="imagens/img_rodape/services-64.png"
+                                alt="Nossos Serviços">
                         </a>
-                        <a href="servicos.html#servicos_2" class="link-rodape">
-                            <p class="lib1-rodape">Mecânica em geral</p>
-                            <p class="lib1-rodape">Revisão preventiva</p>
-                            <p class="lib1-rodape">Suspensão</p>
-                            <p class="lib1-rodape">Troca de óleo</p>
+                        <a href="https://www.instagram.com/medcar_centroautomotivo/">
+                            <img class="icon-rodape" src="imagens/img_rodape/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/Medcarcentroautomotivovgs/">
+                            <img class="icon-rodape" src="imagens/img_rodape/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5519994647675">
+                            <img class="icon-rodape" src="imagens/img_rodape/whatsapp.png" alt="whatsapp">
+                        </a>
+                        <a href="mailto:medcarcentroautomotivo20@gmail.com">
+                            <img class="icon-rodape" src="imagens/img_rodape/email.png" alt="Email">
+                        </a>
+                        <a href="tel:+551936431609">
+                            <img class="icon-rodape" src="imagens/img_rodape/telefone.png" alt="Telefone">
+                        </a>
+                        <a class="ic3-rodape" href="https://goo.gl/maps/6PRvzD4VX5Ebhh8c6">
+                            <img class="icon-rodape ic3-rodape" src="imagens/img_rodape/location-64.png"
+                                alt="Localização">
                         </a>
                     </div>
                 </div>
-                <div class="parteNS-rodape">
-                    <div class="textoNS-rodape">
-                        <h3 class="texto-rodape">NOSSO ENDEREÇO</h3>
-                        <br>
-                        <a href="https://goo.gl/maps/6PRvzD4VX5Ebhh8c6" class="link-rodape">
-                            <p id="e30-rodape">Rua Janda, 135 - Vila Santana,<br>Vargem Grande do Sul</p>
-                        </a>
-                        <br>
-                        <h3 class="texto-rodape">HORÁRIO DE<br>FUNCIONAMENTO</h3>
-                        <br>
-                        <p class="e50-rodape">Seg a Sex - 07h30 às 18h<br>Sáb - 07h30 às 12h</p>
+                <div class="itemN-rodape">
+
+                    <div class="parteN-rodape">
+                        <div class="texto6-rodape">
+                            <p class="texto-rodape">NOSSOS SERVIÇOS</p>
+                            <br>
+                            <a href="servicos.html#servicos" class="link-rodape">
+                                <p class="lib1-rodape">Alinhamento</p>
+                                <p class="lib1-rodape">Balanceamento</p>
+                                <p class="lib1-rodape">Bateria</p>
+                                <p class="lib1-rodape">Câmbio Automático</p>
+                                <p class="lib1-rodape">Freios</p>
+                                <p class="lib1-rodape">Injeção eletrônica</p>
+                            </a>
+                            <a href="servicos.html#servicos_2" class="link-rodape">
+                                <p class="lib1-rodape">Mecânica embreagem</p>
+                                <p class="lib1-rodape">Radiador</p>
+                                <p class="lib1-rodape">Revisão preventiva</p>
+                                <p class="lib1-rodape">Suspensão</p>
+                                <p class="lib1-rodape">Troca de óleo</p>
+                                <p class="lib1-rodape">Troca de pneus</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parteNS-rodape">
+                        <div class="textoNS-rodape">
+                            <p class="texto-rodape">NOSSO ENDEREÇO</p>
+                            <br>
+                            <a href="https://maps.app.goo.gl/VKSF3KRTXaFRdQwS6" class="link-rodape">
+                                <p id="e30-rodape">Rua Joaquim Antonio da Silva, n° 431 <br>Jardim São José, Vargem Grande do Sul</p>
+                            </a>
+                            <br>
+                            <p class="texto-rodape">HORÁRIO DE<br>FUNCIONAMENTO</p>
+                            <br>
+                            <p class="e50-rodape">Seg a Sex - 07h30 às 18h<br>Sáb - 07h30 às 12h</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
