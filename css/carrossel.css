@@ -1,0 +1,70 @@
+.preto{
+    color: black;
+    animation: fadein 1.5s;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    font-size: 400%;
+}
+
+.vermelho{
+    color: rgb(214, 0, 0);
+    animation: fadein 1.5s;
+    font-family:'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 400%;
+}
+
+.branco{
+    color: white;
+    font-size: 400%;
+    animation: fadein 1.5s;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+
+.carousel-caption{
+    height: 200px;
+    top: 0;
+}
+
+@media (max-width: 900px) {
+    
+}
+
+@media (max-width: 899px) {
+    .preto{
+        font-size: 200%;
+        top: -5%;
+    }
+
+    .vermelho{
+        font-size: 200%;
+        top: -30%;
+    }
+
+    .branco{
+        font-size: 200%;
+        top: -5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .preto{
+        font-size: 150%;
+        top: -5%;
+    }
+
+    .vermelho{
+        font-size: 150%;
+        top: -30%;
+    }
+
+    .vermelho_2{
+        color: white;
+    }
+
+    .branco{
+        font-size: 150%;
+        top: -5%;
+    }
+}

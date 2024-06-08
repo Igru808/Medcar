@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontt-heebo: 'Heebo', sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
+    --cor2: #A9A9A9;
+    --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
+}
+/* Cabeçalho */
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--font-padrao);
+    background-color: #1F2024;
+}
+
+#cabecalho {
+    background-color: #1F2024;
+    font-size: 5px;
+    padding: 0 7%;
+}
+
+.logo {
+    height: 84px;
+    width: 143px;
+}
+
+#navbar {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    font-family: var(--font-padrao);
+    margin-inline-end: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+
+#navbar a {
+    display: block;
+    color: #ffffffea;
+    text-align: left;
+    padding: 10px 16px;
+    text-decoration: none;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+
+#navbar .linkbar a:hover {
+    color: var(--cor1);
+}
+
+.linkbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: #2C2C2C;
+    display: none;
+    position: absolute;
+    width: 150%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    font-size: 12px;
+}
+
+.dropdown-content a {
+    padding: 5px;
+}
+
+@keyframes slideup {
+    0%{top: 300px; opacity: 0;}
+    100%{top: 0; opacity: 1;}
+}
+
+@media (max-width: 699px) {
+    #navbar {
+        flex-direction: column;
+        float: none;
+        align-items: center;
+    }
+
+    .linkbar {
+        flex-direction: column;
+    }
+
+    .sumir-1 {
+        order: 1;
+    }
+    .sumir-2 {
+        order: 2;
+    }
+    .sumir-3 {
+        order: 3;
+    }
+    .dropdown {
+        order: 4;
+    }
+
+    #navbar a {
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        width: 150%;
+    }
+    .dropdown-item {
+        font-size: 10px;
+        text-align: left;
+    }
+}

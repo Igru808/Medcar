@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontt-heebo: 'Heebo', sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
+    --cor2: #A9A9A9;
+    --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--font-padrao);
+    background-color: var(--cor4);
+}
+.parteinicial{
+    width: 100%;
+    height: 800%;
+    background-color: var(--cor4);
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.medcar-principal {
+    color:var(--cor5); 
+}
+.tituloprinc{
+    font-family: 'Aero';
+}
+.titulosec{
+    font-size: 200%;
+    font-family: 'Aero'; 
+    margin-top: 1%;
+    text-align: left;
+}
+#fotoprinc{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-self: center; 
+   
+}
+#imagemprincipal{
+    display: flex;
+    width: 50%;
+     
+}
+.secundariotexto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    width: 100%;
+    
+}
+.btn-danger{
+    background-color: #BF3030; !important
+}
+.links-pag2 p{
+    font-weight: bolder;
+}
+.sublink a{
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 500;
+    
+}
+/* Começa a parte de quem somos */
+
+
+
+.sub1{
+    font-family: var(--font-titulo);
+    color: #BF3030;
+    font-size: 150%;
+    padding: 5% 0;
+    text-shadow: 1px 1px 10px#363636
+}
+
+div.texto1 {
+    width: 90%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: justify;
+    height: 150%;
+    line-height:20px;
+    font-size: 15px;
+    color: white;
+    font-family:var(--fontt-heebo);
+}
+
+.img_galeria{
+    display: flex;
+    flex-direction: row;
+}
+img.ft{
+    max-width: 33%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.349);
+    box-sizing: border-box;
+}
+
+#imgTeste{
+    background-image: url("/imagens/img-servicos/balanceamento.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    height: 180px;
+    transition: all 500ms;
+}
+
+#imgTeste a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    transition: all 500ms;
+}
+
+#imgTeste:hover{
+    box-shadow: 3px 3px 5px 0px rgba(255, 255, 255,  0.6);
+    transform: scale(1.2);
+}
+
+#imgTeste:hover>a{
+    background-image: linear-gradient(to right, rgba(191, 13, 0, 0.379), rgba(60, 60, 113, 0.396));
+}
+
+@media (max-width:992px) {
+     .fotopag1{
+        width: 100%;
+        height: 450px;
+
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .conteudo_inicial{
+        margin: auto;
+        display: block;
+        box-sizing: border-box;
+    }
+    .ladoesquerdo{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: auto;
+        margin: auto;
+
+    }
+    div.img_galeria{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin: auto;
+        padding:auto;
+        width:auto;
+        height: auto;
+    } 
+    img.sobre{
+        width: 15%
+    }
+}
+/* @media (min-width:900px){
+    
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .conteudo_inicial{
+        width: 100%;
+        height: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .ladoesquerdo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    div.texto1{
+        padding: auto;
+        box-sizing: border-box;
+        height: auto;
+        margin: auto;
+        line-height: 22px;
+    } */
+      /* div.img_galeria{
+        display: flex;
+        justify-content: space-around;
+    } */
+/* 
+}  */

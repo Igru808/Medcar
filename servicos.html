@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/rodape1.css">
+
+    <link rel="shortcut icon" href="imagens/img-servicos/favicon-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        @keyframes fadein {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <title>Centro Automotivo Medcar</title>
+
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header id="cabecalho">
+        <div id="navbar">
+            <a href="index.html"><img src="imagens/img-servicos/Logo.png" alt="Logo" class="logo"></a>
+            <div class="linkbar">
+                <a href="index.html" class="sumir-1">HOME</a>
+                <div class="dropdown">
+                    <a class="dropbtn">SERVIÇOS</a>
+                    <nav class="dropdown-content">
+                        <a href="servicos.html#servicos" class="dropdown-item">Alinhamento</a>
+                        <a href="servicos.html#servicos" class="dropdown-item">Balanceamento</a>
+                        <a href="servicos.html#servicos" class="dropdown-item">Bateria</a>
+                        <a href="servicos.html#servicos" class="dropdown-item">Embreagem</a>
+                        <a href="servicos.html#servicos" class="dropdown-item">Freios</a>
+                        <a href="servicos.html#servicos" class="dropdown-item">Injeção Eletrônica</a>
+                        <a href="servicos.html#servicos_2" class="dropdown-item">Radiador</a>
+                        <a href="servicos.html#servicos_2" class="dropdown-item">Revisão Preventiva</a>
+                        <a href="servicos.html#servicos_2" class="dropdown-item">Suspensão</a>
+                        <a href="servicos.html#servicos_2" class="dropdown-item">Troca de Óleo</a>
+                        <a href="servicos.html#servicos_2" class="dropdown-item">Troca de Pneus</a>
+                    </nav>
+                </div>
+                <a href="index.html" class="sumir-2">SOBRE NÓS</a>
+                <a href="#rodape" class="sumir-3">CONTATO</a>
+            </div>
+        </div>
+    </header>
+    <!--Introdução-->
+    <main>
+        <!-- Carrossel -->
+        <section class="d-none d-lg-block">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#servicos"><img src="imagens/img-servicos/ferramentas(car).png" alt="Imagem dos Serviços MedCar">
+                        <div class="carousel-caption text-danger bg-dark">
+                            <h1>Serviços Medcar</h1>
+                            <h2>O Médico Do Seu Carro</h2>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="index.html">
+                        <img src="imagens/img-servicos/balanceamento(car).jpg" alt="Imagem da Página Principal">
+                        <div class="carousel-caption">
+                            <h1 class="vermelho">Visite Nossa Página Principal</h1>
+                            <h2 class="branco">E Nos Conheça Um Pouco Melhor</h2>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#rodape">
+                        <img src="imagens/img-servicos/Logo(car).png" alt="Venha nos conhecer" class="mx-auto">
+                        <div class="carousel-caption">
+                            <h1 class="vermelho vermelho_2">Entre Em Contato Ou Venha Nos Visitar</h1>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--Serviços-->
+        <section class="container" id="servicos">
+            <h1 class="text-center text-white py-4">Nossos serviços</h1>
+
+            <section class="row justify-content-center" id="servicos_2">
+                <section class="col-lg-2 img_item mb-5 me-3" id="alinhamento">
+                    <img src="imagens/img-servicos/alinhamento.jpeg" alt="Imagem de Alinhamento" class="img_box">
+                    <div class="legenda">
+                        Alinhamento
+                    </div>
+
+                    <div class="descricao pt-3 px-2" id="descricao-alinhamento">
+                        <h3>Alinhamento</h3>
+                        <p class="texto_descricao">O alinhamento serve para ajustar os ângulos das rodas, mantendo-as retas em relação ao solo e paralelas entre si.  Sinais que seu veículo precisa de alinhamento: desgaste dos pneus desigual; volante desalinhado ao circular em linha reta; dificuldade de retornar o volante depois de uma curva; ao chocar com algum objeto na estrada ou passar em um buraco consideravel grande.</p>
+                        <p>O alinhamento do seu carro deve ser realizado a cada 10 mil km rodados.</p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="balanceamento">
+                    <img src="imagens/img-servicos/balanceamento.jpg" alt="Imagem de Balanceamento" class="img_box">
+                    <div class="legenda">
+                        Balanceamento
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-balanceamento">
+                        <h3>Balanceamento</h3>
+                        <p class="texto_descricao">O objetivo do balanceamento do pneu é distribuir o peso igualmente de toda a ciscuferência do pneu, evitar vibrações  e aumentar a vida útil do pneu. 
+                            Quando é necessário fazer? Quando o volante, banco ou piso vibrando ao atingir determinada velocidade; quando troca os pneus por novos.
+                        </p>
+                        <p>O balanceamento do seu carro deve ser realizado a cada 10 mil km rodados.</p>
+                     </div>
+                    
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="bateria">
+                    <img src="imagens/img-servicos/bateria.jpg" alt="Imagem de Bateria" class="img_box">
+                    <div class="legenda">
+                        Bateria
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-bateria">
+                        <h3>Bateria</h3>
+                        <p class="texto_descricao">A bateria do carro é essencial para dar partida no veículo e para o sistema elétrico.
+                            Sinais que sua bateria não está boa: falhas ao ligar o carro; dispositivos eletricos com problemas; luzes fracas; oxidação da bateria.
+                            Trabalhamos com as melhores marcas de bateria: Moura, Heliar, Tudor e Zetta. 
+                            Garantia de 24 meses.
+                        </p>
+                    </div>
+                </section>
+                <section class="col-lg-2 img_item mb-5 me-3" id="balanceamento">
+                    <img src="imagens/img-servicos/balanceamento.jpg" alt="Imagem de Balanceamento" class="img_box">
+                    <div class="legenda">
+                        Câmbio Automático
+                    </div>
+                    <div class="descricao pt-3 px-2 inverter" id="descricao-balanceamento">
+                        <h3>Câmbio Automático</h3>
+                        <p class="texto_descricao">A troca de óleo do câmbio automático realizada nos períodos corretos e com equipamentos de qualidade, ajuda seu câmbio: prevenir desgastes prematuros nos componentes internos da transmissão; evitar eventuais danos ao veículo e até a necessidade de realizar uma manutenção mais cara e profunda; análise técnica do óleo e do câmbio antes do procedimento; limpeza do fluido antigo para prevenir contaminação do novo, garantindo o melhor resultado. A troca de óleo deve ser feita  a cada 2 anos ou a cada 50 mil km rodados para prolongamento da vida útil de seu câmbio automático, evitando prejuízos. <strong>Além da troca de óleo fazemos a manutenção no câmbio automático também.</strong> </p>
+                     </div>
+                    
+                </section>
+
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="radiador">
+                    <img src="imagens/img-servicos/radiador.jpg" alt="Imagem de Radiador" class="img_box">
+                    <div class="legenda">
+                        Radiador
+                    </div>
+                    <div class="descricao pt-3 px-2 inverter" id="descricao-radiador">
+                        <h3>Radiador</h3>
+                        <p class="texto_descricao">O motor em funcionamento, tende a esquentar. Então 
+                            para evitar o superaquecimento é utilizado o sistema 
+                            arrefecimento - responsável por deixar a temperatura 
+                            motor ideal e manter o bom funcionamento do veículo. Por esse motivo, a água que é armazenada no motor precisa ser verificada com frequência. 
+                            Caso o nível da água esteja baixo, não se deve 
+                            completar o reservatório com água da torneira, isso 
+                            pode danificar certos componentes do automovel. O 
+                             correto é completar com uma solução de água destilada e aditivo próprio.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="embreagem">
+                    <img src="imagens/img-servicos/embreagem.jpg" alt="Imagem de Embreagem" class="img_box">
+                    <div class="legenda">
+                        Embreagem
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-embreagem">
+                        <h3>Embreagem</h3>
+                        <p class="texto_descricao">A embreagem tem a função de ajudar o motorista desde a aceleração até a parada, a manutenção de embreagem é essencial
+                            ao garantir o conforto e segurança do condutor e preservar o motor e a caixa
+                            de câmbio.
+                            Para saber o momento certo de trocar a embreagem e quais manutenções
+                            devem ser feitas existem alguns sinais que podem ser observados, por
+                            exemplo: embreagem patinando; trepidação; embreagem travada; ruído excessivo; pedal duro.</p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="freio">
+                    <img src="imagens/img-servicos/freios.jpg" alt="Imagem de Freios" class="img_box">
+                    <div class="legenda">
+                        Freios
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-freio">
+                        <h3>Freios</h3>
+                        <p class="texto_descricao">Manter os freios em boas condições é crucial na redução dos riscos de acidentes no trânsito. É importante lembrar que a manutenção precisa ser feita a cada seis meses ou a cada dez mil quilômetros rodados, Sinais de que os freios precisam ser trocado: pedal muito duro ou muito suave, trepidação no pedal, barulhos durante a frenagem</p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="injecao_eletronica">
+                    <img src="imagens/img-servicos/injecao.jpg" alt="Imagem de Injeção Eletrônica" class="img_box">
+                    <div class="legenda">
+                        Injeção<br>Eletrônica
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-injecao">
+                        <h3>Injeção Eletrônica</h3>
+                        <p class="texto_descricao">É responsável por enviar combustível ao motor do veículo. Alguns sinais que podem indicar problema na injeção eletrônica: motor falhando, marcha lenta ou veículo morrendo; Vazamento de combustível; luz da injeção eletrônica piscando ou acessa; aumento repentino da rotação do motor; odor de combustível; falha no teste de emissão; falha na ignição.
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="revisao">
+                    <img src="imagens/img-servicos/revisao.jpg" alt="Imagem da Revisão Preventiva" class="img_box">
+                    <div class="legenda">
+                        Revisão Preventiva
+                    </div>
+                    <div class="descricao pt-3 px-2 inverter" id="descricao-revisao">
+                        <h3>Revisão Preventiva</h3>
+                        <p class="texto_descricao">A revisão preventiva corrige as falhas e os problemas antes que eles ocorram. Assim, reduz os custos e aumenta a eficiência da manutenção.Alguns componentes checados: alinhamento de suspensão, óleo, velas, marchas, cinto de segurança, itens obrigatórios, pneus. </p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="suspensao">
+                    <img src="imagens/img-servicos/suspensao.jpg" alt="Imagem de Suspensão" class="img_box">
+                    <div class="legenda">
+                        Suspensão
+                    </div>
+                    <div class="descricao pt-3 px-2 inverter" id="descricao-suspensao">
+                        <h3>Suspensão</h3>
+                        <p class="texto_descricao">A suspensão tem duas funções: absorver as imperfeições do asfalto, proporcionando conforto aos ocupantes, e manter a estabilidade do veículo.
+                        A mola absorve os impactos sofridos pelas rodas e os amortecedores seguram a sua distensão brusca, evitando oscilações no veículo. Principais componentes do sistema de suspensão são: pneus, molas, amortecedores.</p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="oleo">
+                    <img src="imagens/img-servicos/troca de óleo.jpg" alt="Imagem de Troca de Óleo" class="img_box">
+                    <div class="legenda">
+                        Troca de Óleo
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-oleo">
+                        <h3>Troca de Óleo</h3>
+                        <p class="texto_descricao">Ele é principalmente responsável pela lubrificação do motor, evitando o atrito entre as peças e, consequentemente, o desgaste delas. A falta de lubrificação pode até travar o motor.
+                        Recomenda-se que que o óleo seja trocado entre 5 mil a 10 mil quilômetros rodados — ou seis meses, já que a média  de quilometragem é essa.</p>
+                    </div>
+                </section>
+
+                <section class="col-lg-2 img_item mb-5 me-3" id="pneu">
+                    <img src="imagens/img-servicos/troca de pneu.jpg" alt="Troca de pneus" class="img_box">
+                    <div class="legenda">
+                        Troca de Pneus
+                    </div>
+                    <div class="descricao pt-3 px-2" id="descricao-pneu">
+                        <h3>Troca de Pneus</h3>
+                        <p class="texto_descricao">Quando desgastados, os pneus precisam ser trocados para manter a performance e a segurança do veículo. Trabalhamos apenas com pneus de primeira linha: Michelin, Goodyear, Continenta, Dunlop, entre outras opções. </p>
+                    </div>
+                </section>
+            </section>
+            <p class="frase_final">NÃO DEIXE PARA ÚLTIMA HORA <br> A manutenção preventiva é o caminho mais seguro de evitar maiores contratempos! </p>
+        </section>
+    </main>
+
+    <footer class="footer-rodape-certo" id="rodape">
+        <div class="footer-rodape">
+            <div class="item-rodape">
+                <div class="rodape_logo">
+                    <img class="rodape_logo1" src="imagens/img_rodape/logo.png" alt="Logo Medcar">
+                </div>
+                <div class="redes-rodape">
+                    <a class="ic3-rodape" href="#servicos">
+                        <img class="icon-rodape ic1-rodape" src="imagens/img_rodape/services-64.png"
+                            alt="Nossos Serviços">
+                    </a>
+                    <a href="https://www.instagram.com/medcar_centroautomotivo/">
+                        <img class="icon-rodape" src="imagens/img_rodape/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/Medcarcentroautomotivovgs/">
+                        <img class="icon-rodape" src="imagens/img_rodape/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5519994647675">
+                        <img class="icon-rodape" src="imagens/img_rodape/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <a href="mailto:medcarcentroautomotivo20@gmail.com">
+                        <img class="icon-rodape" src="imagens/img_rodape/email.png" alt="Email">
+                    </a>
+                    <a href="tel:+551936431609">
+                        <img class="icon-rodape" src="imagens/img_rodape/telefone.png" alt="Telefone">
+                    </a>
+                    <a class="ic3-rodape" href="https://goo.gl/maps/6PRvzD4VX5Ebhh8c6">
+                        <img class="icon-rodape ic3-rodape" src="imagens/img_rodape/location-64.png"
+                            alt="Localização">
+                    </a>
+                </div>
+            </div>
+            <div class="itemN-rodape">
+
+                <div class="parteN-rodape">
+                    <div class="texto6-rodape">
+                        <p class="texto-rodape">NOSSOS SERVIÇOS</p>
+                        <br>
+                        <a href="servicos.html#servicos" class="link-rodape">
+                            <p class="lib1-rodape">Alinhamento</p>
+                            <p class="lib1-rodape">Balanceamento</p>
+                            <p class="lib1-rodape">Bateria</p>
+                            <p class="lib1-rodape">Câmbio Automático</p>
+                            <p class="lib1-rodape">Freios</p>
+                            <p class="lib1-rodape">Injeção eletrônica</p>
+                        </a>
+                        <a href="servicos.html#servicos_2" class="link-rodape">
+                            <p class="lib1-rodape">Mecânica embreagem</p>
+                            <p class="lib1-rodape">Radiador</p>
+                            <p class="lib1-rodape">Revisão preventiva</p>
+                            <p class="lib1-rodape">Suspensão</p>
+                            <p class="lib1-rodape">Troca de óleo</p>
+                            <p class="lib1-rodape">Troca de pneus</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="parteNS-rodape">
+                    <div class="textoNS-rodape">
+                        <p class="texto-rodape">NOSSO ENDEREÇO</p>
+                        <br>
+                        <a href="https://goo.gl/maps/6PRvzD4VX5Ebhh8c6" class="link-rodape">
+                            <p id="e30-rodape">Rua Janda, 135 - Vila Santana,<br>Vargem Grande do Sul</p>
+                        </a>
+                        <br>
+                        <p class="texto-rodape">HORÁRIO DE<br>FUNCIONAMENTO</p>
+                        <br>
+                        <p class="e50-rodape">Seg a Sex - 07h30 às 18h<br>Sáb - 07h30 às 12h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

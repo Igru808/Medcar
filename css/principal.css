@@ -1,0 +1,13 @@
+*{
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #1F2024;
+    font-family: Helvetica, sans-serif;
+}

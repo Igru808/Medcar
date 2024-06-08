@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Aero";
+    src: url("../fonte/Aero.ttf") format("truetype");
+}
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontt-heebo: 'Heebo', sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    /* --cor1: #C92828; */
+    --cor1: #BF3030;
+    --cor2: #A9A9A9;
+    --cor3: #E9E9E9;
+    --cor4: #1F2024;
+    --cor5: #F0F0F2;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--font-padrao);
+    background-color: #1F2024;
+}
+.fundo{
+    margin: 5% 8%;
+}
+
+.img_box{
+    width: 100%;
+    border: 2px solid white;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.7);
+}
+
+.container4 {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+
+.tit_servico {
+    color: rgba(255, 255, 255, 0.925);
+    text-align: center;
+    text-shadow: #000000 2px 6px 6px; 
+    size: 25%;
+    font-weight: 700;
+}
+
+.container4 p {
+    color: white;
+    font-size: 130%; 
+    line-height: 140%;
+    margin-top: 2%;
+}
+.linha1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 1%;
+    padding: 1%;
+}
+.linha2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 1%;
+    padding: 1%;
+}
+.icone {
+    text-align: center;
+    transition: all 0.3s;
+}
+.icone img  {
+    width: 80px;
+}
+.icone:hover {
+    transform: scale(1.1 ,1.1);
+}
+.link-icones{
+    text-decoration: none;
+}
+
+.icone p {
+    text-transform: uppercase;
+    font-size: 15px;
+}
